@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:layout_gravity="center_horizontal">
+
+    <EditText
+        android:id="@+id/et_inputPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:maxLength="10"
+        android:layout_marginTop="30dp"
+        android:hint="@string/ed_phone"
+        android:textSize="30sp"
+        android:background="@android:drawable/editbox_background"/>
+
+    <EditText
+        android:id="@+id/et_inputMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="20dp"
+        android:hint="@string/ed_sms"
+        android:padding="12dp"
+        android:gravity="top"
+        android:minLines="6"
+        android:textSize="30sp"
+        android:background="@android:drawable/editbox_background"/>
+
+        <TextView
+            android:id="@+id/tv_dateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:hint="@string/txt_time" />
+
+    <Button
+        android:id="@+id/bt_setup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Setup"
+        android:textColor="@color/white"
+        android:background="@color/purple_500"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
+</layout>

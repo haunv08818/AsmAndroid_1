@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".AlarmActNotification">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:src="@drawable/ic_alarm"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/tv_inputMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="20dp"
+        android:hint="@string/ed_sms"
+        android:padding="12dp"
+        android:gravity="top"
+        android:minLines="6"
+        android:textSize="30sp"/>
+    <Button
+        android:id="@+id/bn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="cancel"/>
+
+</LinearLayout>

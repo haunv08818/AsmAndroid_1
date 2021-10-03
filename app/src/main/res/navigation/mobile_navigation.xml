@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_alarm_add">
+
+    <fragment
+        android:id="@+id/nav_alarm"
+        android:name="com.example.demofinal.AlarmManeger.AlarmFrgList"
+        android:label="@string/menu_alarm"
+        tools:layout="@layout/fragment_alarm_list" />
+    <fragment
+        android:id="@+id/nav_alarm_add"
+        android:name="com.example.demofinal.Fragment.AlarmFragment"
+        android:label="@string/menu_alarm"
+        tools:layout="@layout/fragment_alarm"/>
+
+    <fragment
+        android:id="@+id/nav_message"
+        android:name="com.example.demofinal.Fragment.MessageFragment"
+        android:label="@string/menu_message"
+        tools:layout="@layout/fragment_message" />
+
+    <fragment
+        android:id="@+id/nav_call"
+        android:label="@string/menu_phone"
+        android:name="com.example.demofinal.Fragment.PhoneFragment"
+        tools:layout="@layout/fragment_phone" />
+
+</navigation>
